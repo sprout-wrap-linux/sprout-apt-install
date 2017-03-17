@@ -1,0 +1,7 @@
+recipes:
+  - sprout-apt-install
+node_attributes:
+  sprout:
+    apt:
+      packages:
+        - golang
