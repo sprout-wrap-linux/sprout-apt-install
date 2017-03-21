@@ -3,5 +3,8 @@ recipes:
 node_attributes:
   sprout:
     apt:
+      repositories:
+        - name: 'unit193'
+          uri: 'ppa:unit193/encryption'
       packages:
-        - golang
+        - veracrypt
