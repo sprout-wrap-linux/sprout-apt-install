@@ -5,6 +5,14 @@ node_attributes:
     apt:
       repositories:
         - name: 'unit193'
+          distribution: xenial
           uri: 'ppa:unit193/encryption'
+          components: ['main']
+        - name: 'google.cloud'
+          uri: 'https://packages.cloud.google.com/apt'
+          key: 'https://packages.cloud.google.com/apt/doc/apt-key.gpg'
+          distribution: cloud-sdk-xenial
+          components: ['main']
       packages:
         - veracrypt
+        - google-cloud-sdk
